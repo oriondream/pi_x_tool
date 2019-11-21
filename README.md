@@ -4,7 +4,9 @@ This repository automate setting up the cross compilation tool chain for Raspber
 
 # Prerequisites #
 
-1. Enable SSH on the Raspberry Pi
+1. The compiling machine and the Raspberry Pi must be on the same network.
+
+2. Enable SSH on the Raspberry Pi
    ```
    sudo raspi-config
    ```
