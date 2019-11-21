@@ -26,3 +26,14 @@ This repository automate setting up the cross compilation tool chain for Raspber
     cd pi_x_tool
     ./configure
     ```
+
+# Test #
+   ```
+   cd example
+   mkdir build
+   cd build
+   cmake -D CMAKE_TOOLCHAIN_FILE=$HOME/pi_x_tool/pi.cmake ../
+   make
+   scp CMakeHelloWorld pi@192.168.1.PI:/home/pi/
+   ssh pi@192.168.1.PI ./CMakeHelloWorld
+   ```
