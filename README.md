@@ -1,6 +1,6 @@
 # Introduction #
 
-This repository automate setting up the cross compilation tool chain for Raspberry Pi. For more detail of what is behind the scene, it is encouraged to read the original post https://stackoverflow.com/a/19269715/768817
+This repository automate the setting up process for the cross compilation tool chain for Raspberry Pi. For more behind-the-scenes, it is encouraged to visit the original post https://stackoverflow.com/a/19269715/768817 by Stenyg@stackoverflow
 
 # Prerequisites #
 
