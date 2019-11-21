@@ -1,0 +1,6 @@
+[submodule "tools"]
+	path = tools
+	url = git://github.com/raspberrypi/tools.git
+[submodule "example"]
+	path = example
+	url = https://github.com/jameskbride/cmake-hello-world.git

@@ -1,0 +1,19 @@
+echo "Raspberry Pi cross compiling toolchain setup"
+
+git submodule init
+git submodule update --recursive
+
+echo "Enter username on the raspberry pi:"
+read pi_username
+
+echo "Enter raspberry pi hostname or IP address:"
+read pi_location
+
+scp -r $pi_username@$pi_location:/{usr,lib} rootfs/
+
+echo ""
+echo "Bootstraping complete!"
+echo ""
+echo "Usage:"
+echo ""
+echo "    Add this to you cmake -DCMAKE_TOOLCHAIN_FILE=`pwd`/pi.cmake"
