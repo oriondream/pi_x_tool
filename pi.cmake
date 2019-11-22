@@ -1,7 +1,7 @@
 SET(CMAKE_SYSTEM_NAME Linux)
 SET(CMAKE_SYSTEM_VERSION 1)
 
-set(RASPBERRY_ROOT_PATH $ENV{HOME}/raspberrypi/rootfs)
+set(RASPBERRY_ROOT_PATH ${CMAKE_CURRENT_LIST_DIR}/rootfs)
 
 SET(CMAKE_C_COMPILER ${CMAKE_CURRENT_LIST_DIR}/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian/bin/arm-linux-gnueabihf-gcc)
 SET(CMAKE_CXX_COMPILER ${CMAKE_CURRENT_LIST_DIR}/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian/bin/arm-linux-gnueabihf-g++)

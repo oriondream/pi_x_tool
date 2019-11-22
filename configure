@@ -1,5 +1,10 @@
 echo "Raspberry Pi cross compiling toolchain setup"
 
+# Installing i386 support
+sudo dpkg --add-architecture i386
+sudo apt-get update
+sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386
+
 git submodule init
 git submodule update --recursive
 
