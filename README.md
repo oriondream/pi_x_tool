@@ -7,10 +7,19 @@ This repository automate the setting up process for the cross compilation tool c
 1. The compiling machine and the Raspberry Pi must be on the same network.
 
 2. Enable SSH on the Raspberry Pi
+
    ```
    sudo raspi-config
    ```
    Select Interface Options -> P2 SSH and follow on screen instructions.
+
+3. i386 support
+
+   ```
+   sudo dpkg --add-architecture i386
+   sudo apt-get update
+   sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386
+   ```
 
 # Main Procedure #
 
